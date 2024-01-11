@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+   /*background: url('https://c2.staticflickr.com/8/7082/7156114861_8c2e72939c_b.jpg');*/
+    background-size: cover;
+}
+.to-do{
+    width: 100%;
+    max-width: 540px;
+    background-color: wheat;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.to-do h1{
+    color: rgb(2, 24, 2);
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:italic;
+}
+.to-do i{
+    width: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+color: green;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(62, 189, 2);
+    border-radius: 20px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    margin: 5px;
+    color: white;
+    background-color: rgb(38, 88, 14);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    font-stretch: semi-expanded;
+    font-weight: 500;
+    font-style:inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('https://th.bing.com/th/id/OIP.oAKtln54BrOeCGleApbdNgHaHa?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url('https://th.bing.com/th/id/OIP.9xEUmURvUIddeqm1eUQlQwHaHW?rs=1&pid=ImgDetMain');
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    color: #d30909;
+text-align: center;
+line-height: 40px;
+font-size: 32px;
+}
+ul li span:hover{
+    background-color: greenyellow;
+    border-radius: 50%;
+}
